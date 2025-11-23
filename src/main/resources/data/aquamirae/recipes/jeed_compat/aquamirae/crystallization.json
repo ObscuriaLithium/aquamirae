@@ -1,0 +1,26 @@
+{
+  "type": "jeed:effect_provider",
+  "effect": "aquamirae:crystallization",
+  "providers": [
+    {
+      "item": "aquamirae:abyssal_heaume"
+    },
+	{
+      "item": "aquamirae:abyssal_brigantine"
+    },
+	{
+      "item": "aquamirae:abyssal_leggings"
+    },
+	{
+      "item": "aquamirae:abyssal_boots"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "jeed"
+      ]
+    }
+  ]
+}

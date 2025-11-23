@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "type": "jeed:effect_provider",
+  "effect": "minecraft:dolphins_grace",
+  "providers": [
+    {
+      "item": "aquamirae:terrible_helmet"
+    },
+	{
+      "item": "aquamirae:terrible_chestplate"
+    },
+	{
+      "item": "aquamirae:terrible_leggings"
+    },
+	{
+      "item": "aquamirae:terrible_boots"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "jeed"
+      ]
+    }
+  ]
+}

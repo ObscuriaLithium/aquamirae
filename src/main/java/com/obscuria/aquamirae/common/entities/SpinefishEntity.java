@@ -29,7 +29,7 @@ public class SpinefishEntity extends SchoolingFishEntity {
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_COW_DEATH;
+        return SoundEvents.ENTITY_COD_DEATH;
     }
 
     @Override
