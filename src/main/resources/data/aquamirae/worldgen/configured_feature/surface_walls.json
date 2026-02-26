@@ -1,0 +1,24 @@
+{
+  "type": "aquamirae:walls",
+  "config": {
+    "ground_mask": {
+      "noise": "aquamirae:walls",
+      "min": 0.48,
+      "max": 1.0
+    },
+    "wall_layer_1_height": 5,
+    "wall_layer_1": {
+      "noise": "aquamirae:walls",
+      "easing": "ease_in_expo",
+      "min": 0.5,
+      "max": 0.58
+    },
+    "wall_layer_2_height": 14,
+    "wall_layer_2": {
+      "noise": "aquamirae:walls",
+      "easing": "ease_in_out_cubic",
+      "min": 0.68,
+      "max": 0.78
+    }
+  }
+}

@@ -1,4 +1,12 @@
 {
+  "ambient.ice_maze.loop": {
+    "sounds": [
+      {
+        "name": "aquamirae:ambient/ice_maze_loop",
+        "stream": true
+      }
+    ]
+  },
   "entity.golden_moth.catch": {
     "category": "ambient",
     "sounds": [

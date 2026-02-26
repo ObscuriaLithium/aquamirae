@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#aquamirae:ice_maze",
+  "features": "aquamirae:surface_camp",
+  "step": "fluid_springs"
+}

@@ -109,8 +109,8 @@ public final class AquamiraeCreativeTab {
 			event.accept(AquamiraeItems.POSEIDONS_BREAKFAST.get());
 			event.accept(AquamiraeItems.ELODEA.get());
 
-			Aquamirae.SetBuilder.common().forEach(event::accept);
-			Aquamirae.SetBuilder.rare().forEach(event::accept);
+			//Aquamirae.SetBuilder.common().forEach(event::accept);
+			//Aquamirae.SetBuilder.rare().forEach(event::accept);
 		}
 	}
 

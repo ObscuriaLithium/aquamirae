@@ -200,7 +200,7 @@ public class Maw extends Monster implements IAnimated {
 	}
 
 	public static SpawnPlacements.SpawnPredicate<Maw> getSpawnRules() {
-		return (entityType, level, spawnType, pos, random) -> pos.getY() < level.getSeaLevel() + 6 &&
+		return (entityType, level, spawnType, pos, random) -> pos.getY() < level.getSeaLevel() + 4 &&
 				Monster.checkAnyLightMonsterSpawnRules(entityType, level, spawnType, pos, random);
 	}
 

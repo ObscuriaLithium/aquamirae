@@ -1,0 +1,8 @@
+{
+  "type": "aquamirae:camp",
+  "config": {
+    "height": 4,
+    "barrel_cound": 5,
+    "barrel_loot_table": "aquamirae:chests/maze_camp_chest"
+  }
+}

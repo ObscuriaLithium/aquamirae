@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#aquamirae:ice_maze",
+  "features": "aquamirae:surface_walls",
+  "step": "underground_decoration"
+}

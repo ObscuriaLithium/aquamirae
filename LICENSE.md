@@ -1,31 +1,45 @@
-# Copyright © Obscuria. All Rights Reserved.
+# Obscuria Ecosystem License (OEL)
 
 -----
 
-All projects developed by Obscuria are distributed under an All Rights Reserved license, with limited permissions granted as explicitly defined below. Any use outside the permitted scope requires prior written authorization from the copyright holder.
+Obscuria projects are distributed under a custom community-focused license designed to support a healthy modding ecosystem while preserving the project’s identity, authorship, and official distribution channels. Community use, integration, and monetized participation through standard platform models are permitted as described below. All rights not expressly granted by this license remain reserved.
+
+-----
 
 ## 1. Permitted Uses
 
-1. **Modpacks**. Inclusion of the original, unmodified mod files in CurseForge and Modrinth modpacks, including monetization through the official author reward programs of these platforms.
-   - Modifications within modpacks are permitted only when implemented through external hooks, mixins, or similar runtime mechanisms.
-   - The original mod files must always be loaded by the user directly from official distribution sources, and runtime modifications must not attempt to rebrand or misrepresent the project.
-2. **Content Creation**. Creation and publication of video or streaming content (e.g., YouTube, Twitch, or similar platforms) featuring the mods, including monetization through standard platform features such as ads, memberships, or donations.
-3. **Servers**. Use of the original, unmodified mod files on non-commercial servers.
-4. **Community Contributions**. Forks, pull requests, bug reports, feature requests, or other contributions are welcome, provided they are intended as collaborative input into the official project and not for independent redistribution or rebranding.
+### 1.1 Modpacks
+Inclusion of the original, unmodified mod files in modpacks distributed through platforms such as CurseForge or Modrinth is permitted. Monetization through official platform reward programs is allowed. Runtime modifications, including mixins, datapacks, configuration changes, or compatibility layers, are permitted provided that the original mod files are not altered or redistributed in modified form, the project is not rebranded or misrepresented, and users obtain or load the original files from official distribution sources. Sharing official download links is permitted and encouraged.
 
-## 2. Prohibited Uses
+### 1.2 Content Creation
+Creation and monetization of videos, streams, tutorials, reviews, and similar content featuring the project is permitted. This includes revenue generated through advertisements, memberships, sponsorships, donations, or comparable platform features.
 
-1. **Unauthorized Redistribution**. Uploading, hosting, or distributing the mod files outside of CurseForge or Modrinth without explicit permission.
-2. **Rebranding or Derivatives**. Releasing independent projects, forks, or modified versions of the code or assets (textures, models, sounds, etc.) under a different name or branding.
-3. **File Modification**. Distributing modified versions of the original mod files (e.g., JARs) is prohibited. All modifications must be performed at runtime as described in Section 1.
-4. **Monetization**. Direct monetization of the mod files, source code, or assets in any form, except as expressly permitted in Section 1. This includes hosting on donation or fundraising platforms (e.g., Patreon, Ko-fi) when tied directly to redistribution of the mod.
-5. **Source Code Misuse**. Partial or full use of the source code, assets, or other project materials in other projects without explicit written permission.
+### 1.3 Servers
+Use of the original, unmodified mod files on public or private servers is permitted. Standard server monetization models, including donations, cosmetic perks, access tiers, or community support systems, are allowed, provided that the mod itself is not sold separately and access to the mod is not independently paywalled.
+
+### 1.4 Community Contributions
+Forks, pull requests, issue reports, feature suggestions, and similar contributions intended to improve the official project are welcome. Public forks for development or experimentation are permitted, provided they are not distributed as independent releases or marketed as alternative versions of the project.
+
+-----
+
+## 2. Restrictions
+
+To preserve project integrity and branding, the following actions are not permitted without explicit written authorization: redistribution of the mod files outside official distribution platforms; re-uploading project files to mirrors or alternative download hosts; distribution of modified versions of the original mod files, including altered JARs; rebranding the project or presenting modified versions as official releases; use of the project’s code, assets, or substantial design elements in standalone projects; and direct sale of the mod files, source code, or assets.
+
+-----
 
 ## 3. Commercial Use
 
-Commercial use of Obscuria’s intellectual property is strictly prohibited except as permitted in Section 1 (e.g., modpacks with CurseForge/Modrinth author rewards, video monetization).
-For any other commercial inquiries (such as partnerships, licensing, or independent projects based on the mods), explicit written authorization from Obscuria is required.
+Commercial activity is permitted only within the scope defined in Section 1. Any commercial use beyond those permissions, including sublicensing, redistribution-based fundraising tied to modified distributions, partnerships involving derivative branded releases, or commercial derivative products, requires explicit written authorization.
 
-## 4. Community and Open Source Clarification
+-----
 
-The source code of Obscuria’s projects may be publicly accessible to encourage community collaboration. However, public access does not grant redistribution, relicensing, or rebranding rights. Contributions are welcome and encouraged, but the intellectual property remains under an All Rights Reserved license.
+## 4. Source Code and Transparency
+
+Source code may be publicly accessible to encourage transparency, learning, and collaborative development. Public availability does not grant rights to redistribute modified releases, relicense the project, create independent branded derivatives, or represent modified versions as official. All intellectual property rights remain with the original author.
+
+-----
+
+## 5. Branding and Identity
+
+The project name, branding, visual identity, and associated materials remain the intellectual property of the original author. Add-ons, integrations, or compatibility modules must clearly distinguish themselves from the official project and must not imply endorsement without permission.

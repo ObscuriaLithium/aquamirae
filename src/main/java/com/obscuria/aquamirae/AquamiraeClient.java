@@ -24,15 +24,13 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 import java.util.function.Supplier;
 
-/**
- *  {@link Aquamirae} Client Proxy
- */
 public final class AquamiraeClient {
+
     private static int biomeMusic = 0;
     private static int corneliaMusic = 0;
 
     public static Supplier<ConfigScreenHandler.ConfigScreenFactory> getConfig() {
-        return  () -> new ConfigScreenHandler.ConfigScreenFactory((minecraft, screen) -> new ConfigScreen(screen));
+        return () -> new ConfigScreenHandler.ConfigScreenFactory((minecraft, screen) -> new ConfigScreen(screen));
     }
 
     public static void scrollSound() {
@@ -41,16 +39,18 @@ public final class AquamiraeClient {
     }
 
     public static void spawnParticles(Player player) {
-        if (AquamiraeConfig.Client.particles.get()) player.level().addParticle(ParticleTypes.WHITE_ASH, false,
+        if (!AquamiraeConfig.Client.particles.get()) return;
+        player.level().addParticle(ParticleTypes.WHITE_ASH, false,
                 player.getX() - 6D + 12D * player.getRandom().nextDouble(), player.getY() + 4 - 3D * player.getRandom().nextDouble(),
                 player.getZ() - 6D + 12D * player.getRandom().nextDouble(), 0, 100, 0);
     }
 
     public static void playAmbientSounds(Player player, boolean config) {
-        if (config) { if (AquamiraeConfig.Client.ambientSounds.get() && Math.random() <= 0.01 && Math.random() <= 0.1)
-            player.level().playLocalSound(player.getBlockX() - 10 + 20 * Math.random(), player.getBlockY(),
-                    player.getBlockZ() - 10 + 20 * Math.random(),
-                    AquamiraeSounds.AMBIENT_SHIP_HORN.get(), SoundSource.AMBIENT, 1, 1, false);
+        if (config) {
+            if (AquamiraeConfig.Client.ambientSounds.get() && Math.random() <= 0.01 && Math.random() <= 0.1)
+                player.level().playLocalSound(player.getBlockX() - 10 + 20 * Math.random(), player.getBlockY(),
+                        player.getBlockZ() - 10 + 20 * Math.random(),
+                        AquamiraeSounds.AMBIENT_SHIP_HORN.get(), SoundSource.AMBIENT, 1, 1, false);
         } else player.level().playLocalSound(player.getBlockX() - 10 + 20 * Math.random(), player.getBlockY(),
                 player.getBlockZ() - 10 + 20 * Math.random(),
                 AquamiraeSounds.AMBIENT_SHIP_HORN.get(), SoundSource.AMBIENT, 1, 1, false);
@@ -89,7 +89,8 @@ public final class AquamiraeClient {
 
         @SubscribeEvent
         public static void tick(TickEvent.@NotNull ClientTickEvent event) {
-            if (event.phase != TickEvent.Phase.END || Minecraft.getInstance().player == null || Minecraft.getInstance().isPaused()) return;
+            if (event.phase != TickEvent.Phase.END || Minecraft.getInstance().player == null || Minecraft.getInstance().isPaused())
+                return;
             if (biomeMusic > 0) biomeMusic--;
             if (corneliaMusic > 0) corneliaMusic--;
             final Player player = Minecraft.getInstance().player;

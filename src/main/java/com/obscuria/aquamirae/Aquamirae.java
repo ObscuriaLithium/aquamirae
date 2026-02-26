@@ -99,22 +99,13 @@ public class Aquamirae {
     }
 
     public Aquamirae() {
-        final IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        var eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        AquamiraeRecipes.REGISTRY.register(bus);
-        AquamiraeCreativeTab.REGISTRY.register(bus);
-        AquamiraeFeatures.REGISTRY.register(bus);
-        AquamiraeSounds.REGISTRY.register(bus);
-        AquamiraeBlocks.REGISTRY.register(bus);
-        AquamiraeEntities.REGISTRY.register(bus);
-        AquamiraeItems.REGISTRY.register(bus);
-        AquamiraeMobEffects.REGISTRY.register(bus);
-        AquamiraePotions.REGISTRY.register(bus);
-        AquamiraeParticleTypes.REGISTRY.register(bus);
+        AquamiraeRegistries.init(eventBus);
         AquamiraeConfig.register();
 
-        bus.addListener(this::commonSetup);
-        bus.addListener(EventPriority.HIGHEST, this::registerEnchantments);
+        eventBus.addListener(this::commonSetup);
+        eventBus.addListener(EventPriority.HIGHEST, this::registerEnchantments);
 
         MinecraftForge.EVENT_BUS.addListener(this::onEntitySpawn);
         MinecraftForge.EVENT_BUS.addListener(this::onPlayerTick);

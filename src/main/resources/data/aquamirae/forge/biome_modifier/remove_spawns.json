@@ -1,0 +1,5 @@
+{
+  "type": "forge:remove_spawns",
+  "biomes": "#aquamirae:ice_maze",
+  "entity_types": "#aquamirae:removeable"
+}

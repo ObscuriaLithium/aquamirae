@@ -1,0 +1,8 @@
+{
+  "feature": "aquamirae:underwater_oxygelium",
+  "placement": [
+    { "type": "minecraft:rarity_filter", "chance": 2 },
+    { "type": "minecraft:in_square" },
+    { "type": "minecraft:biome" }
+  ]
+}

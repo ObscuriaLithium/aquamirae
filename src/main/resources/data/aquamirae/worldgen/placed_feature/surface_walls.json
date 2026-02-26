@@ -1,0 +1,8 @@
+{
+  "feature": "aquamirae:surface_walls",
+  "placement": [
+    {
+      "type": "aquamirae:chunk_sampled_biome"
+    }
+  ]
+}
