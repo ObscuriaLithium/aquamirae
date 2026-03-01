@@ -145,36 +145,42 @@ public final class AquamiraeCreativeTab {
 		final ListTag pages2 = new ListTag();
 		final ListTag pages3 = new ListTag();
 
-		pages1.add(StringTag.valueOf("{\"text\":\"Entry #12\n\nLast afternoon, Captain Cornelia went to the seabed in search of any additional resources. There are rumors among the crew that the real subject of her expedition is something else.\"}"));
-		pages1.add(StringTag.valueOf("{\"text\":\"More than a day has passed since the captain's dive. She was wearing the only diving suit we had, so we couldn't help her in any way. Worst of all, she had the master key with her. As our hopes of rescue dwindle, the threat of rebellion grows.\"}"));
-		book1.getOrCreateTag().putString("title", "Pillagers Ship Logbook");
-		book1.getOrCreateTag().putString("author", "Unknown");
+		pages1.add(translatedPage("book.aquamirae.pillagers_ship_logbook.page_1"));
+		pages1.add(translatedPage("book.aquamirae.pillagers_ship_logbook.page_2"));
+		book1.getOrCreateTag().putString("title", translatedString("book.aquamirae.pillagers_ship_logbook.title"));
+		book1.getOrCreateTag().putString("author", translatedString("book.aquamirae.logbook.author"));
 		book1.getOrCreateTag().putInt("generation", 3);
 		book1.getOrCreateTag().putBoolean("resolved", true);
 		book1.getOrCreateTag().put("pages", pages1);
 
-		pages2.add(StringTag.valueOf("{\"text\":\"Entry #34\n\nThese beasts from the depths prowl for someone to devour... One of those critters has already eaten our midshipman... Swallowed him whole along with his crossbow.\"}"));
-		pages2.add(StringTag.valueOf("{\"text\":\"Entry #35\n\nWe are waiting in vain for rescue... No one will come to help us, we have to survive on our own. Today the construction of the fort from parts of the ship was completed. In any case, she could no longer plow the seas ever again.\"}"));
-		pages2.add(StringTag.valueOf("{\"extra\":[{\"text\":\"Entry #36\n\nWe are no longer able to heat the fort, resources are running out. \"},{\"color\":\"dark_green\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"extra\":[{\"color\":\"green\",\"text\":\"Underground shelter\"},{\"text\":\"\n  There are more structures\n  underneath the ice... Looks\n  like I have to go down to\n  these terrible fish...\"}],\"text\":\"\"}},\"text\":\"Part of the crew began to dig a shelter underground\"},{\"text\":\". It is the only way we have a chance not to freeze to death.\"}],\"text\":\"\"}"));
-		pages2.add(StringTag.valueOf("{\"text\":\"Entry #37\n\nWe hid our supplies and valuable cargo underground. But Poseidon cursed us, and during the storm the lieutenant washed away into the sea... Along with master keys.\"}"));
-		pages2.add(StringTag.valueOf("{\"extra\":[{\"text\":\"The hope remains that we could possibly find \"},{\"color\":\"dark_green\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"extra\":[{\"color\":\"green\",\"text\":\"Cargo keys\"},{\"text\":\"\n  Without the keys, I will not\n  be able to receive the\n  most valuable cargo. I need\n  to find other ships nearby.\"}],\"text\":\"\"}},\"text\":\"similar keys on other ships of our fleet\"},{\"text\":\", which have suffered the same fate as us.\"}],\"text\":\"\"}"));
-		book2.getOrCreateTag().putString("title", "Pillagers Outpost Logbook");
-		book2.getOrCreateTag().putString("author", "Unknown");
+		pages2.add(translatedPage("book.aquamirae.pillagers_outpost_logbook.page_1"));
+		pages2.add(translatedPage("book.aquamirae.pillagers_outpost_logbook.page_2"));
+		pages2.add(StringTag.valueOf("{\"extra\":[{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.start\"},{\"color\":\"dark_green\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"extra\":[{\"color\":\"green\",\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.tooltip_title\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.tooltip_body\"}],\"text\":\"\"}},\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.highlight\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.end\"}],\"text\":\"\"}"));
+		pages2.add(translatedPage("book.aquamirae.pillagers_outpost_logbook.page_4"));
+		pages2.add(StringTag.valueOf("{\"extra\":[{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.start\"},{\"color\":\"dark_green\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"extra\":[{\"color\":\"green\",\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.tooltip_title\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.tooltip_body\"}],\"text\":\"\"}},\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.highlight\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.end\"}],\"text\":\"\"}"));
+		book2.getOrCreateTag().putString("title", translatedString("book.aquamirae.pillagers_outpost_logbook.title"));
+		book2.getOrCreateTag().putString("author", translatedString("book.aquamirae.logbook.author"));
 		book2.getOrCreateTag().putInt("generation", 3);
 		book2.getOrCreateTag().putBoolean("resolved", true);
 		book2.getOrCreateTag().put("pages", pages2);
 
-		pages3.add(StringTag.valueOf("{\"text\":\"Entry #41\n\nIn these cursed lands there you can't find shelter even under the ice and the thickness of the earth... Some creatures that look like eels crawled out of the depths of the underworld, depriving us of the opportunity \"}"));
-		pages3.add(StringTag.valueOf("{\"text\":\"to return back to the surface.\n\nOnly the mistress of the moon knows how long shall we last... At all events, our hopes of seeing sunlight had all but vanished. This place will become our grave, our eternal tomb. For us and that damned rune...\"}"));
-		pages3.add(StringTag.valueOf("{\"text\":\"Last Entry\n\nIt whispers to me, whispers inside my head the secrets of ice and snow... Ice... Now we are chained in ice forever...\n\nI suppose a similar fate awaits the crew that set out in search of the fire rune... I wonder if they made it\"}"));
-		pages3.add(StringTag.valueOf("{\"text\":\"to the Great Dark Forest valley. Though it doesn't really matter now...\"}"));
-		book3.getOrCreateTag().putString("title", "Pillagers Shelter Logbook");
-		book3.getOrCreateTag().putString("author", "Unknown");
+		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_1"));
+		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_2"));
+		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_3"));
+		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_4"));
+		book3.getOrCreateTag().putString("title", translatedString("book.aquamirae.pillagers_shelter_logbook.title"));
+		book3.getOrCreateTag().putString("author", translatedString("book.aquamirae.logbook.author"));
 		book3.getOrCreateTag().putInt("generation", 3);
 		book3.getOrCreateTag().putBoolean("resolved", true);
 		book3.getOrCreateTag().put("pages", pages3);
 
 		list.add(book1); list.add(book2); list.add(book3);
 		return list;
+	}
+	private static @NotNull StringTag translatedPage(String key) {
+		return StringTag.valueOf("{\"translate\":\"" + key + "\"}");
+	}
+	private static @NotNull String translatedString(String key) {
+		return Component.translatable(key).getString();
 	}
 }
