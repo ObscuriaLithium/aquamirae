@@ -1,10 +1,8 @@
 # Obscuria Ecosystem License (OEL)
 
------
-
 Obscuria projects are distributed under a custom community-focused license designed to support a healthy modding ecosystem while preserving the project’s identity, authorship, and official distribution channels. Community use, integration, and monetized participation through standard platform models are permitted as described below. All rights not expressly granted by this license remain reserved.
 
------
+<br>
 
 ## 1. Permitted Uses
 
@@ -20,25 +18,25 @@ Use of the original, unmodified mod files on public or private servers is permit
 ### 1.4 Community Contributions
 Forks, pull requests, issue reports, feature suggestions, and similar contributions intended to improve the official project are welcome. Public forks for development or experimentation are permitted, provided they are not distributed as independent releases or marketed as alternative versions of the project.
 
------
+<br>
 
 ## 2. Restrictions
 
 To preserve project integrity and branding, the following actions are not permitted without explicit written authorization: redistribution of the mod files outside official distribution platforms; re-uploading project files to mirrors or alternative download hosts; distribution of modified versions of the original mod files, including altered JARs; rebranding the project or presenting modified versions as official releases; use of the project’s code, assets, or substantial design elements in standalone projects; and direct sale of the mod files, source code, or assets.
 
------
+<br>
 
 ## 3. Commercial Use
 
 Commercial activity is permitted only within the scope defined in Section 1. Any commercial use beyond those permissions, including sublicensing, redistribution-based fundraising tied to modified distributions, partnerships involving derivative branded releases, or commercial derivative products, requires explicit written authorization.
 
------
+<br>
 
 ## 4. Source Code and Transparency
 
 Source code may be publicly accessible to encourage transparency, learning, and collaborative development. Public availability does not grant rights to redistribute modified releases, relicense the project, create independent branded derivatives, or represent modified versions as official. All intellectual property rights remain with the original author.
 
------
+<br>
 
 ## 5. Branding and Identity
 
