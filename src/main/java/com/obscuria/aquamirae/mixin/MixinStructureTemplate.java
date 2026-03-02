@@ -1,6 +1,7 @@
 package com.obscuria.aquamirae.mixin;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
+import com.obscuria.aquamirae.common.lore.LogbookDefinition;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.block.Block;
@@ -26,7 +27,7 @@ public abstract class MixinStructureTemplate {
 
     @Inject(method = "load", at = @At("TAIL"))
     private void loadCustomTags(HolderGetter<Block> level, CompoundTag tag, CallbackInfo info) {
-        if (!tag.getBoolean(TAG_IGNORE_LIQUIDS)) return;
-        this.aquamirae$ignoreLiquids = true;
+        if (tag.getBoolean(TAG_IGNORE_LIQUIDS)) this.aquamirae$ignoreLiquids = true;
+        LogbookDefinition.patchStructureBooks(tag);
     }
 }

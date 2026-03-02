@@ -2,10 +2,9 @@
 package com.obscuria.aquamirae.registry;
 
 import com.obscuria.aquamirae.Aquamirae;
+import com.obscuria.aquamirae.common.lore.LogbookDefinition;
 import com.obscuria.obscureapi.registry.ObscureAPIEnchantments;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.nbt.ListTag;
-import net.minecraft.nbt.StringTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -138,49 +137,16 @@ public final class AquamiraeCreativeTab {
 
 	public static @NotNull List<ItemStack> logBooks() {
 		final List<ItemStack> list = new ArrayList<>();
-		final ItemStack book1 = Items.WRITTEN_BOOK.getDefaultInstance();
-		final ItemStack book2 = Items.WRITTEN_BOOK.getDefaultInstance();
-		final ItemStack book3 = Items.WRITTEN_BOOK.getDefaultInstance();
-		final ListTag pages1 = new ListTag();
-		final ListTag pages2 = new ListTag();
-		final ListTag pages3 = new ListTag();
+		final ItemStack shipBook = Items.WRITTEN_BOOK.getDefaultInstance();
+		LogbookDefinition.PILLAGERS_SHIP.applyTo(shipBook);
 
-		pages1.add(translatedPage("book.aquamirae.pillagers_ship_logbook.page_1"));
-		pages1.add(translatedPage("book.aquamirae.pillagers_ship_logbook.page_2"));
-		book1.getOrCreateTag().putString("title", translatedString("book.aquamirae.pillagers_ship_logbook.title"));
-		book1.getOrCreateTag().putString("author", translatedString("book.aquamirae.logbook.author"));
-		book1.getOrCreateTag().putInt("generation", 3);
-		book1.getOrCreateTag().putBoolean("resolved", true);
-		book1.getOrCreateTag().put("pages", pages1);
+		final ItemStack outpostBook = Items.WRITTEN_BOOK.getDefaultInstance();
+		LogbookDefinition.PILLAGERS_OUTPOST.applyTo(outpostBook);
 
-		pages2.add(translatedPage("book.aquamirae.pillagers_outpost_logbook.page_1"));
-		pages2.add(translatedPage("book.aquamirae.pillagers_outpost_logbook.page_2"));
-		pages2.add(StringTag.valueOf("{\"extra\":[{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.start\"},{\"color\":\"dark_green\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"extra\":[{\"color\":\"green\",\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.tooltip_title\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.tooltip_body\"}],\"text\":\"\"}},\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.highlight\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.end\"}],\"text\":\"\"}"));
-		pages2.add(translatedPage("book.aquamirae.pillagers_outpost_logbook.page_4"));
-		pages2.add(StringTag.valueOf("{\"extra\":[{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.start\"},{\"color\":\"dark_green\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"extra\":[{\"color\":\"green\",\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.tooltip_title\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.tooltip_body\"}],\"text\":\"\"}},\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.highlight\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.end\"}],\"text\":\"\"}"));
-		book2.getOrCreateTag().putString("title", translatedString("book.aquamirae.pillagers_outpost_logbook.title"));
-		book2.getOrCreateTag().putString("author", translatedString("book.aquamirae.logbook.author"));
-		book2.getOrCreateTag().putInt("generation", 3);
-		book2.getOrCreateTag().putBoolean("resolved", true);
-		book2.getOrCreateTag().put("pages", pages2);
+		final ItemStack shelterBook = Items.WRITTEN_BOOK.getDefaultInstance();
+		LogbookDefinition.PILLAGERS_SHELTER.applyTo(shelterBook);
 
-		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_1"));
-		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_2"));
-		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_3"));
-		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_4"));
-		book3.getOrCreateTag().putString("title", translatedString("book.aquamirae.pillagers_shelter_logbook.title"));
-		book3.getOrCreateTag().putString("author", translatedString("book.aquamirae.logbook.author"));
-		book3.getOrCreateTag().putInt("generation", 3);
-		book3.getOrCreateTag().putBoolean("resolved", true);
-		book3.getOrCreateTag().put("pages", pages3);
-
-		list.add(book1); list.add(book2); list.add(book3);
+		list.add(shipBook); list.add(outpostBook); list.add(shelterBook);
 		return list;
-	}
-	private static @NotNull StringTag translatedPage(String key) {
-		return StringTag.valueOf("{\"translate\":\"" + key + "\"}");
-	}
-	private static @NotNull String translatedString(String key) {
-		return Component.translatable(key).getString();
 	}
 }
