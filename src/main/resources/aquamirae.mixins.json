@@ -6,7 +6,8 @@
   "refmap": "aquamirae.refmap.json",
   "mixins": [
     "MixinBiome",
-    "MixinStructureTemplate"
+    "MixinStructureTemplate",
+    "MixinWrittenBookItem"
   ],
   "client": [
   ],

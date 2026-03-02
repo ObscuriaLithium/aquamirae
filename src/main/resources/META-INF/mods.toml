@@ -3,32 +3,32 @@ loaderVersion="${loader_version_range}"
 license="${mod_license}"
 
 [[mods]]
-modId="${mod_id}"
-version="${mod_version}"
-displayName="${mod_name}"
-authors="${mod_authors}"
-description='''${mod_description}'''
-updateJSONURL="https://raw.githubusercontent.com/ObscuriaLithium/Minecraft/main/aquamirae/versions.json"
-issueTrackerURL="https://discord.gg/By29HCKgPx"
-logoFile="logo.png"
+    modId="${mod_id}"
+    version="${mod_version}"
+    displayName="${mod_name}"
+    authors="${mod_authors}"
+    description='''${mod_description}'''
+    updateJSONURL="https://raw.githubusercontent.com/ObscuriaLithium/modding/main/versions/aquamirae.json"
+    issueTrackerURL="https://github.com/ObscuriaLithium/aquamirae/issues"
+    logoFile="logo.png"
 
 [[dependencies.${mod_id}]]
-modId="obscure_api"
-mandatory=true
-versionRange="${api_version_range}"
-ordering="NONE"
-side="BOTH"
+    modId="obscure_api"
+    mandatory=true
+    versionRange="${api_version_range}"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.${mod_id}]]
-modId="forge"
-mandatory=true
-versionRange="${forge_version_range}"
-ordering="NONE"
-side="BOTH"
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.${mod_id}]]
-modId="minecraft"
-mandatory=true
-versionRange="${minecraft_version_range}"
-ordering="NONE"
-side="BOTH"
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"

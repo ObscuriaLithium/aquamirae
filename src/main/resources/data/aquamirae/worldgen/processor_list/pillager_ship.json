@@ -1,0 +1,8 @@
+{
+  "processors": [
+    {
+      "processor_type": "aquamirae:logbook",
+      "logbook_type": "pillager_ship"
+    }
+  ]
+}

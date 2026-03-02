@@ -15,6 +15,7 @@ public interface AquamiraeFeatures {
 
     RegistryObject<WallsFeature> WALLS = REGISTRY.register("walls", WallsFeature::new);
     RegistryObject<CrackedIceFeature> CRACKED_ICE = REGISTRY.register("cracked_ice", CrackedIceFeature::new);
+    RegistryObject<MonolithFeature> MONOLITH = REGISTRY.register("monolith", MonolithFeature::new);
     RegistryObject<CampFeature> CAMP = REGISTRY.register("camp", CampFeature::new);
     RegistryObject<WisteriaNiveisFeature> WISTERIA_NIVEIS = REGISTRY.register("wisteria_niveis", WisteriaNiveisFeature::new);
     RegistryObject<OxygeliumFeature> OXYGELIUM = REGISTRY.register("oxygelium", () -> new OxygeliumFeature(NoneFeatureConfiguration.CODEC));

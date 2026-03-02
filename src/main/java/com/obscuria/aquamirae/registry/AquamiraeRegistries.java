@@ -16,6 +16,7 @@ public final class AquamiraeRegistries {
 
     public static void init(IEventBus eventBus) {
         AquamiraePlacementModifiers.REGISTRY.register(eventBus);
+        AquamiraeStructureProcessors.REGISTRY.register(eventBus);
         AquamiraeRecipes.REGISTRY.register(eventBus);
         AquamiraeCreativeTab.REGISTRY.register(eventBus);
         AquamiraeFeatures.REGISTRY.register(eventBus);

@@ -2,14 +2,12 @@
 package com.obscuria.aquamirae.registry;
 
 import com.obscuria.aquamirae.Aquamirae;
+import com.obscuria.aquamirae.common.items.Logbook;
 import com.obscuria.obscureapi.registry.ObscureAPIEnchantments;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.nbt.ListTag;
-import net.minecraft.nbt.StringTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -73,7 +71,9 @@ public final class AquamiraeCreativeTab {
 			event.accept(AquamiraeItems.DAGGER_OF_GREED.get());
 			event.accept(AquamiraeItems.SHELL_HORN.get());
 			event.accept(AquamiraeItems.FROZEN_KEY.get());
-			logBooks().forEach(event::accept);
+            event.accept(Logbook.PILLAGER_SHIP.get());
+            event.accept(Logbook.PILLAGER_OUTPOST.get());
+            event.accept(Logbook.PILLAGER_SHELTER.get());
 
 			event.accept(AquamiraeItems.EEL_SPAWN_EGG.get());
 			event.accept(AquamiraeItems.SPINEFISH_SPAWN_EGG.get());
@@ -108,9 +108,6 @@ public final class AquamiraeCreativeTab {
 			event.accept(AquamiraeItems.SEA_STEW.get());
 			event.accept(AquamiraeItems.POSEIDONS_BREAKFAST.get());
 			event.accept(AquamiraeItems.ELODEA.get());
-
-			//Aquamirae.SetBuilder.common().forEach(event::accept);
-			//Aquamirae.SetBuilder.rare().forEach(event::accept);
 		}
 	}
 
@@ -134,53 +131,5 @@ public final class AquamiraeCreativeTab {
 		stack2.enchant(ObscureAPIEnchantments.MIRROR.get(), ObscureAPIEnchantments.MIRROR.get().getMaxLevel());
 		list.add(stack1); list.add(stack2);
 		return list;
-	}
-
-	public static @NotNull List<ItemStack> logBooks() {
-		final List<ItemStack> list = new ArrayList<>();
-		final ItemStack book1 = Items.WRITTEN_BOOK.getDefaultInstance();
-		final ItemStack book2 = Items.WRITTEN_BOOK.getDefaultInstance();
-		final ItemStack book3 = Items.WRITTEN_BOOK.getDefaultInstance();
-		final ListTag pages1 = new ListTag();
-		final ListTag pages2 = new ListTag();
-		final ListTag pages3 = new ListTag();
-
-		pages1.add(translatedPage("book.aquamirae.pillagers_ship_logbook.page_1"));
-		pages1.add(translatedPage("book.aquamirae.pillagers_ship_logbook.page_2"));
-		book1.getOrCreateTag().putString("title", translatedString("book.aquamirae.pillagers_ship_logbook.title"));
-		book1.getOrCreateTag().putString("author", translatedString("book.aquamirae.logbook.author"));
-		book1.getOrCreateTag().putInt("generation", 3);
-		book1.getOrCreateTag().putBoolean("resolved", true);
-		book1.getOrCreateTag().put("pages", pages1);
-
-		pages2.add(translatedPage("book.aquamirae.pillagers_outpost_logbook.page_1"));
-		pages2.add(translatedPage("book.aquamirae.pillagers_outpost_logbook.page_2"));
-		pages2.add(StringTag.valueOf("{\"extra\":[{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.start\"},{\"color\":\"dark_green\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"extra\":[{\"color\":\"green\",\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.tooltip_title\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.tooltip_body\"}],\"text\":\"\"}},\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.highlight\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_3.end\"}],\"text\":\"\"}"));
-		pages2.add(translatedPage("book.aquamirae.pillagers_outpost_logbook.page_4"));
-		pages2.add(StringTag.valueOf("{\"extra\":[{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.start\"},{\"color\":\"dark_green\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"extra\":[{\"color\":\"green\",\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.tooltip_title\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.tooltip_body\"}],\"text\":\"\"}},\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.highlight\"},{\"translate\":\"book.aquamirae.pillagers_outpost_logbook.page_5.end\"}],\"text\":\"\"}"));
-		book2.getOrCreateTag().putString("title", translatedString("book.aquamirae.pillagers_outpost_logbook.title"));
-		book2.getOrCreateTag().putString("author", translatedString("book.aquamirae.logbook.author"));
-		book2.getOrCreateTag().putInt("generation", 3);
-		book2.getOrCreateTag().putBoolean("resolved", true);
-		book2.getOrCreateTag().put("pages", pages2);
-
-		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_1"));
-		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_2"));
-		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_3"));
-		pages3.add(translatedPage("book.aquamirae.pillagers_shelter_logbook.page_4"));
-		book3.getOrCreateTag().putString("title", translatedString("book.aquamirae.pillagers_shelter_logbook.title"));
-		book3.getOrCreateTag().putString("author", translatedString("book.aquamirae.logbook.author"));
-		book3.getOrCreateTag().putInt("generation", 3);
-		book3.getOrCreateTag().putBoolean("resolved", true);
-		book3.getOrCreateTag().put("pages", pages3);
-
-		list.add(book1); list.add(book2); list.add(book3);
-		return list;
-	}
-	private static @NotNull StringTag translatedPage(String key) {
-		return StringTag.valueOf("{\"translate\":\"" + key + "\"}");
-	}
-	private static @NotNull String translatedString(String key) {
-		return Component.translatable(key).getString();
 	}
 }

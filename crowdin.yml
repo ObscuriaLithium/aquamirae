@@ -1,4 +1,0 @@
-files:
-  - source: /src/main/resources/assets/aquamirae/lang/en_us.json
-    translation: /src/main/resources/assets/aquamirae/lang/%locale%.json
-    type: json
