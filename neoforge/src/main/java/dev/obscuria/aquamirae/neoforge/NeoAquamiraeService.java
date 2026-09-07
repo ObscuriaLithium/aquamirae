@@ -10,7 +10,7 @@ import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 public final class NeoAquamiraeService implements AquamiraeService {
 
     @Override
-    public SpawnEggItem newSpawnEggItem(DeferredEntity<? extends Mob> entitySupplier, int backgroundColor, int highlightColor, Item.Properties properties) {
+    public <T extends Mob> SpawnEggItem newSpawnEggItem(DeferredEntity<T> entitySupplier, int backgroundColor, int highlightColor, Item.Properties properties) {
         return new DeferredSpawnEggItem(entitySupplier, backgroundColor, highlightColor, properties);
     }
 }
