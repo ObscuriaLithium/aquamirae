@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:angler_fang"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "aquamirae:terrible_upgrade_smithing_template",
+      "aquamirae:terrible_fang",
+      "aquamirae:terrible_chakram",
+      "aquamirae:bone_meal_from_angler_fang"
+    ]
+  }
+}

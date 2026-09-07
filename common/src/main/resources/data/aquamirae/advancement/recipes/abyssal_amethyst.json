@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:abyssal_amethyst"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "aquamirae:abyssal_upgrade_smithing_template",
+      "aquamirae:abyssal_tiara",
+      "aquamirae:shatterblade",
+      "aquamirae:shatterspike",
+      "aquamirae:dreadwake",
+      "aquamirae:maze_rose"
+    ]
+  }
+}

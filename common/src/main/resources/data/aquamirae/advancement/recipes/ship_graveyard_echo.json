@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:ship_graveyard_echo"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "aquamirae:echo_compass",
+      "aquamirae:abyssal_upgrade_smithing_template",
+      "aquamirae:salvager_suit",
+      "aquamirae:salvager_waders",
+      "aquamirae:salvager_boots",
+      "aquamirae:terrible_cleaver",
+      "aquamirae:shatterblade",
+      "aquamirae:shatterspike",
+      "aquamirae:dreadwake",
+      "aquamirae:terrible_chakram",
+      "aquamirae:maze_rose"
+    ]
+  }
+}

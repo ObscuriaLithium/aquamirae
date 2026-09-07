@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:esca"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "aquamirae:esca_skewer",
+      "aquamirae:poseidon_breakfast",
+      "aquamirae:terrible_blade",
+      "aquamirae:luminescent_bubble",
+      "aquamirae:luminescent_lamp"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:spinefish"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "aquamirae:cooked_spinefish_from_campfire",
+      "aquamirae:cooked_spinefish_from_smelting",
+      "aquamirae:cooked_spinefish_from_smoking"
+    ]
+  }
+}
