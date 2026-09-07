@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "green_dye",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aquamirae:wisteria_niveis"
+    }
+  ],
+  "result": {
+    "id": "minecraft:green_dye",
+    "count": 1
+  }
+}

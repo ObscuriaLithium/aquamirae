@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "experience": 1,
+  "cookingtime": 450,
+  "ingredient": {
+    "item": "aquamirae:spinefish"
+  },
+  "result": {
+    "id": "aquamirae:cooked_spinefish"
+  }
+}

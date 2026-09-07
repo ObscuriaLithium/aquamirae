@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "sticks",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aquamirae:oxyhelium"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stick",
+    "count": 2
+  }
+}

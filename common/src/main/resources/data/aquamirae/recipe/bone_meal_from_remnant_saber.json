@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bonemeal",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aquamirae:remnant_saber"
+    }
+  ],
+  "result": {
+    "id": "minecraft:bone_meal",
+    "count": 4
+  }
+}

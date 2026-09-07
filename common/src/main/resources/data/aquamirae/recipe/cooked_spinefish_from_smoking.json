@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "experience": 1,
+  "cookingtime": 75,
+  "ingredient": {
+    "item": "aquamirae:spinefish"
+  },
+  "result": {
+    "id": "aquamirae:cooked_spinefish"
+  }
+}
