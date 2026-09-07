@@ -1,1 +1,3 @@
-* Fixed some biome features not generating with Tectonic world generation
+* Added some missing crafting and cooking recipes
+* Added recipe-unlocking advancements for the new recipes
+* Implemented asynchronous keepsake loading
