@@ -1,0 +1,141 @@
+name: ⚙️ Compatibility Issue
+description: This mod conflicts with another mod, library, or modpack
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Mod conflicts are common and often fixable — but only with specific information.
+        Please fill this out as thoroughly as you can. Vague reports like *"doesn't work with X"* 
+        are very hard to act on.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What goes wrong?
+      description: Describe the incompatibility clearly — crash, visual glitch, broken mechanic, item conflict, etc.
+      placeholder: |
+        When both mods are loaded, the deep ocean biome from Aquamirae 
+        gets completely replaced by the one from Alex's Caves. 
+        Aquamirae structures stop spawning entirely.
+    validations:
+      required: true
+
+  - type: textarea
+    id: conflicting_mods
+    attributes:
+      label: Conflicting mod(s)
+      description: Name, version, and where to find the other mod(s) involved.
+      placeholder: |
+        - Alex's Caves 1.1.0 (Forge) — https://www.curseforge.com/minecraft/mc-mods/alexs-caves
+        - Regions Unexplored 0.4.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How to trigger the issue consistently.
+      placeholder: |
+        1. Install Aquamirae 2.0.4 + Alex's Caves 1.1.0 on Forge 1.20.1
+        2. Generate a new world
+        3. Locate a deep ocean biome using /locatebiome
+        4. No Aquamirae structures present; Alex's biome overlay dominates
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        
+        &nbsp;
+        
+        # 🔧 Environment
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: This mod's version
+      placeholder: "e.g. 2.0.4"
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft version
+      placeholder: "e.g. 1.20.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod loader
+      options:
+        - Forge
+        - NeoForge
+        - Fabric
+        - Quilt
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: loader_version
+    attributes:
+      label: Mod loader version
+      placeholder: "e.g. Forge 47.2.0"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        
+        &nbsp;
+        
+        # 📋 Logs
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Paste `latest.log` or a crash report if one was generated.
+        Even without a crash, the log often contains warnings about conflicting registries or mixins.
+        Use [mclo.gs](https://mclo.gs) for large logs.
+      placeholder: |
+        https://mclo.gs/...
+      render: text
+
+  - type: textarea
+    id: modlist
+    attributes:
+      label: Full mod list
+      description: Export from your launcher if possible. Critical for modpack compatibility issues.
+      placeholder: |
+        - aquamirae-2.0.4.jar
+        - alexscaves-1.1.0.jar
+        - ...
+      render: text
+
+  - type: dropdown
+    id: isolated
+    attributes:
+      label: Did you test with ONLY the two conflicting mods (+ dependencies)?
+      description: Isolating the conflict saves a lot of debugging time.
+      options:
+        - "Yes — confirmed conflict with just those two mods"
+        - "No — tested in a full modpack only"
+        - "Partially — narrowed it down but not fully isolated"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Screenshots, videos, config settings, or anything else relevant.
+      placeholder: Optional

@@ -1,0 +1,144 @@
+name: 🐛 Bug Report
+description: Something is broken or behaving unexpectedly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting — please check [existing issues](../../issues) to avoid duplicates.
+        Fill in as much as you can. Fields marked **required** are needed to investigate.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug. What did you expect, and what actually happened?
+      placeholder: |
+        Expected: The item should drop from the boss.
+        Actual: Nothing drops at all, the loot table seems empty.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step instructions to trigger the bug reliably.
+      placeholder: |
+        1. Start a new world
+        2. Find the dungeon in biome X
+        3. Kill the boss
+        4. Check the loot — nothing appears
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: How often does it happen?
+      options:
+        - Always (100%)
+        - Often (>50%)
+        - Sometimes (~50%)
+        - Rarely (<25%)
+        - Once / couldn't reproduce again
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        
+        &nbsp;
+        
+        # 🔧 Environment
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod version
+      description: Found on the mod's CurseForge/Modrinth page or in your mods folder filename.
+      placeholder: "e.g. 2.0.4"
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft version
+      placeholder: "e.g. 1.20.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod loader
+      options:
+        - Forge
+        - NeoForge
+        - Fabric
+        - Quilt
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: loader_version
+    attributes:
+      label: Mod loader version
+      placeholder: "e.g. Forge 47.2.0 / Fabric Loader 0.15.7"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: other_mods
+    attributes:
+      label: Does the bug happen with ONLY this mod installed (+ required dependencies)?
+      description: This helps rule out mod conflicts quickly.
+      options:
+        - "Yes — isolated, no other mods"
+        - "No — other mods are present"
+        - "Didn't test in isolation"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        
+        &nbsp;
+        
+        # 📋 Logs
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Crash log or latest.log
+      description: |
+        **Required if the game crashed.** Paste the relevant portion or a link to a paste service (https://mclo.gs is recommended).
+        For non-crash bugs, share `latest.log` — it often contains important error messages even without a crash.
+      placeholder: |
+        Paste log here, or share a link:
+        https://mclo.gs/...
+      render: text
+
+  - type: textarea
+    id: modlist
+    attributes:
+      label: Mod list
+      description: |
+        If you have other mods installed, paste your full mod list here.
+        You can export it from the launcher (MultiMC, Prism, CurseForge, Modrinth App all have this option).
+      placeholder: |
+        - aquamirae-2.0.4.jar
+        - jei-1.20.1-forge-15.2.0.27.jar
+        - ...
+      render: text
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Screenshots, videos, save files, or anything else that helps explain the issue.
+      placeholder: Optional — but screenshots are very helpful for visual bugs.

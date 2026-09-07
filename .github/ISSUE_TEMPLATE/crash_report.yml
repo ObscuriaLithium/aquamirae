@@ -1,0 +1,148 @@
+name: 💥 Crash Report
+description: The game crashed — to title screen, desktop, or won't launch at all
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A crash is different from a regular bug — it usually leaves a detailed log that's very useful.
+        Please attach it below. Without logs, crashes are nearly impossible to diagnose.
+        
+        **Where to find your crash log:**
+        - `.minecraft/crash-reports/` — timestamped files, pick the most recent
+        - `.minecraft/logs/latest.log` — always useful alongside the crash report
+        - [mclo.gs](https://mclo.gs) is a great paste service for logs
+
+  - type: dropdown
+    id: crash_type
+    attributes:
+      label: When does the crash happen?
+      options:
+        - During game launch / loading screen
+        - When loading a world
+        - While playing (in-world)
+        - When opening a specific GUI or screen
+        - On exit
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_were_you_doing
+    attributes:
+      label: What were you doing when it crashed?
+      description: Even a rough description helps narrow it down.
+      placeholder: |
+        I was exploring the Midnight area and opened a chest near the boss room.
+        The game froze for a second and then crashed to desktop.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        
+        &nbsp;
+        
+        # 🔧 Environment
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod version
+      placeholder: "e.g. 2.0.4"
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft version
+      placeholder: "e.g. 1.20.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod loader
+      options:
+        - Forge
+        - NeoForge
+        - Fabric
+        - Quilt
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: loader_version
+    attributes:
+      label: Mod loader version
+      placeholder: "e.g. Forge 47.2.0 / Fabric Loader 0.15.7"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        
+        &nbsp;
+        
+        # 📋 Crash Logs *(required)*
+
+  - type: textarea
+    id: crash_report
+    attributes:
+      label: Crash report
+      description: |
+        Paste the contents of the crash report file, or share a link to [mclo.gs](https://mclo.gs).
+        File is in `.minecraft/crash-reports/` — pick the most recent one.
+      placeholder: |
+        ---- Minecraft Crash Report ----
+        // ...
+        
+        Or paste a link: https://mclo.gs/...
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: latest_log
+    attributes:
+      label: latest.log
+      description: |
+        Often contains errors that happened **before** the crash, which helps trace the root cause.
+        File is in `.minecraft/logs/latest.log`.
+      placeholder: |
+        Paste here or link: https://mclo.gs/...
+      render: text
+
+  - type: textarea
+    id: modlist
+    attributes:
+      label: Mod list
+      description: Your full list of installed mods, exported from your launcher if possible.
+      placeholder: |
+        - aquamirae-2.0.4.jar
+        - jei-1.20.1-forge-15.2.0.27.jar
+        - ...
+      render: text
+
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Can you reproduce it consistently?
+      options:
+        - "Yes — happens every time I do X"
+        - "Sometimes — not sure what triggers it"
+        - "Happened once, can't reproduce"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Java version, OS, launcher, allocated RAM — anything that might be relevant.
+      placeholder: Optional

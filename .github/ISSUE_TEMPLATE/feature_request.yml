@@ -1,0 +1,78 @@
+name: ✨ Feature Request
+description: Suggest a new feature, mechanic, content, or improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea? Great — describe it clearly and it's much more likely to be considered.
+        This isn't a guarantee it will be implemented, but good suggestions do make it in.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What do you want to see added or changed?
+      description: A short, clear description of your idea.
+      placeholder: |
+        Add a way to craft the Cage Lantern without needing a dungeon drop, 
+        using deep-sea materials as an alternative recipe.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve, or what's missing?
+      description: Explain the motivation. What experience or gap in the mod prompted this?
+      placeholder: |
+        Right now the Cage Lantern is only obtainable from the Midnight dungeon, 
+        which is extremely rare to find. Players who want to decorate with it 
+        are stuck either cheating it in or farming for hours with no guarantee.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Describe the feature in detail
+      description: |
+        How would it work? What would it look like? Any ideas on balance, progression, 
+        visual design, or interaction with existing content?
+      placeholder: |
+        A crafting recipe using 4 Abyssal Scales + 1 Iron Bars + 1 Glowstone.
+        Could be gated behind killing the Cage Fish at least once (advancement unlock?).
+        This way it stays earned, just not RNG-dependent.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: What type of addition is this?
+      options:
+        - New item / block
+        - New mob or boss
+        - New biome or structure
+        - New mechanic or system
+        - Balance / progression change
+        - Visual / aesthetic improvement
+        - Config or accessibility option
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Any other ways this could be solved? Or existing workarounds you're using?
+      placeholder: |
+        Could also work as a villager trade, or a rare loot from ocean monuments.
+        Currently using a datapack override as a workaround, but that breaks on updates.
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: References, screenshots, mockups, similar implementations in other mods — anything useful.
+      placeholder: Optional
