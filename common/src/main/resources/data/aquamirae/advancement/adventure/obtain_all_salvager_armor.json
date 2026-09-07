@@ -1,0 +1,50 @@
+{
+  "parent": "aquamirae:adventure/obtain_frozen_key",
+  "display": {
+    "icon": {
+      "id": "aquamirae:salvager_helmet"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_all_salvager_armor.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_all_salvager_armor.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_all_salvager_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:salvager_helmet"
+            ]
+          },
+          {
+            "items": [
+              "aquamirae:salvager_suit"
+            ]
+          },
+          {
+            "items": [
+              "aquamirae:salvager_waders"
+            ]
+          },
+          {
+            "items": [
+              "aquamirae:salvager_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 40
+  }
+}

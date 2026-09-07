@@ -1,0 +1,10 @@
+{
+  "parent": "aquamirae:block/template/frozen_chest",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "all": "aquamirae:block/chest_normal",
+    "normal": "aquamirae:block/chest_normal",
+    "particle": "minecraft:block/oak_planks",
+    "texture": "aquamirae:block/frozen_chest"
+  }
+}

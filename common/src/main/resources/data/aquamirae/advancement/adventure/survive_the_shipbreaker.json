@@ -1,0 +1,26 @@
+{
+  "parent": "aquamirae:adventure/encounter_the_shipbreaker",
+  "display": {
+    "icon": {
+      "id": "aquamirae:maelstrom_vestige"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.survive_the_shipbreaker.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.survive_the_shipbreaker.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "survive_the_shipbreaker": {
+      "trigger": "aquamirae:shipbreaker_survival"
+    }
+  },
+  "rewards": {
+    "experience": 200
+  }
+}

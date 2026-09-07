@@ -1,0 +1,1 @@
+* Fixed some biome features not generating with Tectonic world generation

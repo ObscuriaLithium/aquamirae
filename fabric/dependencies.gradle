@@ -1,0 +1,11 @@
+dependencies {
+    modImplementation("dev.obscuria:fragmentum-fabric:${minecraft_version}-${fragmentum_version}")
+    modImplementation("dev.isxander:yet-another-config-lib:${yacl_version}+${minecraft_version}-fabric")
+    modImplementation("com.terraformersmc:modmenu:${fabric_modmenu_version}")
+    modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
+    implementation("com.eliotlash.mclib:mclib:20")
+
+    modLocalRuntime("curse.maven:jei-238222:8622752")
+    modLocalRuntime("fuzs.forgeconfigapiport:forgeconfigapiport-fabric:21.1.6")
+    modLocalRuntime("com.terraformersmc:modmenu:11.0.3")
+}

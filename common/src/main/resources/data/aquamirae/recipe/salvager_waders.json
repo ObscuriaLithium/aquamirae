@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "202",
+    "0 0",
+    "1 1"
+  ],
+  "key": {
+    "0": { "item": "minecraft:leather" },
+    "1": { "item": "minecraft:iron_ingot" },
+    "2": { "item": "aquamirae:ship_graveyard_echo" }
+  },
+  "result": {
+    "id": "aquamirae:salvager_waders",
+    "count": 1
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "parent": "aquamirae:adventure/obtain_abyssal_upgrade_smithing_template",
+  "display": {
+    "icon": {
+      "id": "aquamirae:shatterblade"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_all_abyssal_weapons.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_all_abyssal_weapons.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aquamirae:shatterblade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:shatterblade"
+            ]
+          }
+        ]
+      }
+    },
+    "aquamirae:shatterspike": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:shatterspike"
+            ]
+          }
+        ]
+      }
+    },
+    "aquamirae:maze_rose": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:maze_rose"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "aquamirae:shatterblade"
+    ],
+    [
+      "aquamirae:shatterspike"
+    ],
+    [
+      "aquamirae:maze_rose"
+    ]
+  ],
+  "rewards": {
+    "experience": 40
+  }
+}

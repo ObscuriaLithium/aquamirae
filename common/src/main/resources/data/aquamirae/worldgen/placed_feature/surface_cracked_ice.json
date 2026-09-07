@@ -1,0 +1,8 @@
+{
+  "feature": "aquamirae:surface_cracked_ice",
+  "placement": [
+    {
+      "type": "aquamirae:chunk_sampled_biome"
+    }
+  ]
+}

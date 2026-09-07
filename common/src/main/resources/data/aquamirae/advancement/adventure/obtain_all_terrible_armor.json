@@ -1,0 +1,50 @@
+{
+  "parent": "aquamirae:adventure/obtain_terrible_upgrade_smithing_template",
+  "display": {
+    "icon": {
+      "id": "aquamirae:terrible_chestplate"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_all_terrible_armor.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_all_terrible_armor.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_all_terrible_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:terrible_helmet"
+            ]
+          },
+          {
+            "items": [
+              "aquamirae:terrible_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "aquamirae:terrible_leggings"
+            ]
+          },
+          {
+            "items": [
+              "aquamirae:terrible_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 40
+  }
+}

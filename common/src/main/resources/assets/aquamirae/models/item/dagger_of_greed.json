@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "aquamirae:item/dagger_of_greed"
+  }
+}

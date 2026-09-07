@@ -1,0 +1,6 @@
+dependencies {
+    implementation("dev.obscuria:fragmentum-neoforge:${minecraft_version}-${fragmentum_version}")
+    implementation("dev.isxander:yet-another-config-lib:3.8.2+${minecraft_version}-neoforge")
+    implementation("software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}")
+    implementation("com.eliotlash.mclib:mclib:20")
+}

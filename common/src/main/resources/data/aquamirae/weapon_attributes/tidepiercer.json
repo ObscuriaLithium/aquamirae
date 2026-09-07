@@ -1,0 +1,6 @@
+{
+  "parent": "bettercombat:coral_blade",
+  "attributes": {
+    "attack_range": 4.0
+  }
+}

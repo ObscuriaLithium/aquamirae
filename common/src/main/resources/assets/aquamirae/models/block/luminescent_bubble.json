@@ -1,0 +1,9 @@
+{
+  "parent": "aquamirae:block/template/bubble",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "all": "aquamirae:block/luminescent_bubble",
+    "particle": "aquamirae:block/luminescent_bubble",
+    "texture": "aquamirae:block/luminescent_bubble"
+  }
+}

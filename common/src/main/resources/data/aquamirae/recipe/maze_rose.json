@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "212",
+    "1 1",
+    "212"
+  ],
+  "key": {
+    "1": { "item": "aquamirae:abyssal_amethyst" },
+    "2": { "item": "aquamirae:ship_graveyard_echo" }
+  },
+  "result": {
+    "id": "aquamirae:maze_rose",
+    "count": 1
+  }
+}

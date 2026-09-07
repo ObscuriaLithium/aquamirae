@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "aquamirae:block/frozen_chest"
+    },
+    "facing=east": {
+      "model": "aquamirae:block/frozen_chest",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "aquamirae:block/frozen_chest",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "aquamirae:block/frozen_chest",
+      "y": 270
+    }
+  }
+}

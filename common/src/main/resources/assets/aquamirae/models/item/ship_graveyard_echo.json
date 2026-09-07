@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "aquamirae:item/ship_graveyard_echo"
+  }
+}

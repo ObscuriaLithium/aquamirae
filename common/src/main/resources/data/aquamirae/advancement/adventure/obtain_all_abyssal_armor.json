@@ -1,0 +1,51 @@
+{
+  "parent": "aquamirae:adventure/obtain_abyssal_upgrade_smithing_template",
+  "display": {
+    "icon": {
+      "id": "aquamirae:abyssal_brigandine"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_all_abyssal_armor.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_all_abyssal_armor.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_all_abyssal_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:abyssal_heaume",
+              "aquamirae:abyssal_tiara"
+            ]
+          },
+          {
+            "items": [
+              "aquamirae:abyssal_brigandine"
+            ]
+          },
+          {
+            "items": [
+              "aquamirae:abyssal_leggings"
+            ]
+          },
+          {
+            "items": [
+              "aquamirae:abyssal_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 40
+  }
+}

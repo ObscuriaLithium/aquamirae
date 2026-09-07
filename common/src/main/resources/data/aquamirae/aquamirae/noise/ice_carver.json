@@ -1,0 +1,6 @@
+{
+  "noise_type": "Cellular",
+  "frequency": 0.03,
+  "cellular_distance_function": "Hybrid",
+  "cellular_return_type": "Distance2Sub"
+}

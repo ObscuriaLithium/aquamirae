@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:entity",
+  "random_sequence": "aquamirae:entities/scuttler",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "aquamirae:is_shipbreaker",
+                "expected": true
+              }
+            ]
+          }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "aquamirae:ship_graveyard_echo"
+        }
+      ]
+    }
+  ]
+}

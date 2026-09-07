@@ -1,0 +1,15 @@
+{
+  "name": "aquamirae:shelter/tunnel_top",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "aquamirae:pirate_shelter/tunnel_top",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

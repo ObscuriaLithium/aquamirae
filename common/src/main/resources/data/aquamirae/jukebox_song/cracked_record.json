@@ -1,0 +1,8 @@
+{
+  "comparator_output": 3,
+  "length_in_seconds": 35.0,
+  "sound_event": "aquamirae:record.cracked_record",
+  "description": {
+    "translate": "jukebox_song.aquamirae.cracked_record"
+  }
+}

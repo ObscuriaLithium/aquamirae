@@ -1,0 +1,31 @@
+{
+  "parent": "aquamirae:adventure/find_ice_maze",
+  "display": {
+    "icon": {
+      "id": "minecraft:chest"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.tame_shellback.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.tame_shellback.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aquamirae:shellback": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": {
+          "type": "aquamirae:shellback"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  1",
+    "21 ",
+    "0  "
+  ],
+  "key": {
+    "0": { "item": "minecraft:stick" },
+    "1": { "item": "aquamirae:sharp_bones" },
+    "2": { "item": "minecraft:string" }
+  },
+  "result": {
+    "id": "aquamirae:remnant_saber",
+    "count": 1
+  }
+}

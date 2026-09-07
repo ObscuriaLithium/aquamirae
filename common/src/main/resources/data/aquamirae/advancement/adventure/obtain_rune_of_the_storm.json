@@ -1,0 +1,35 @@
+{
+  "parent": "aquamirae:adventure/obtain_all_salvager_armor",
+  "display": {
+    "icon": {
+      "id": "aquamirae:rune_of_the_storm"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_rune_of_the_storm.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_rune_of_the_storm.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aquamirae:rune_of_the_storm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:rune_of_the_storm"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 200
+  }
+}

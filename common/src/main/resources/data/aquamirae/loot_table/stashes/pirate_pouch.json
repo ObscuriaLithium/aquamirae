@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "weight": 70,
+          "type": "aquamirae:keepsake_armor"
+        },
+        {
+          "weight": 20,
+          "type": "minecraft:item",
+          "name": "aquamirae:fin"
+        },
+        {
+          "weight": 10,
+          "type": "minecraft:item",
+          "name": "aquamirae:terrible_upgrade_smithing_template"
+        }
+      ]
+    }
+  ]
+}

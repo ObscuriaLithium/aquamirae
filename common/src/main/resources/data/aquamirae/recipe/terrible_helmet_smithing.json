@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:iron_helmet"
+  },
+  "template": {
+    "item": "aquamirae:terrible_upgrade_smithing_template"
+  },
+  "addition": {
+    "item": "aquamirae:fin"
+  },
+  "result": {
+    "id": "aquamirae:terrible_helmet",
+    "count": 1
+  }
+}

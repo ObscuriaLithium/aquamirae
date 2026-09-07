@@ -1,0 +1,35 @@
+{
+  "parent": "aquamirae:adventure/encounter_the_shipbreaker",
+  "display": {
+    "icon": {
+      "id": "aquamirae:ship_graveyard_echo"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_ship_graveyard_echo.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_ship_graveyard_echo.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aquamirae:ship_graveyard_echo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:ship_graveyard_echo"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 40
+  }
+}

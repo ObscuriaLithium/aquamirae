@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "template": {
+    "item": "aquamirae:abyssal_upgrade_smithing_template"
+  },
+  "addition": {
+    "item": "aquamirae:abyssal_amethyst"
+  },
+  "result": {
+    "id": "aquamirae:abyssal_heaume",
+    "count": 1
+  }
+}

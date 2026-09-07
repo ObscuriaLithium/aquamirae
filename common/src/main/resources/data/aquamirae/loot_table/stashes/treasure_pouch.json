@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "weight": 30,
+          "type": "minecraft:loot_table",
+          "value": "aquamirae:entities/golden_moth"
+        },
+        {
+          "weight": 10,
+          "type": "minecraft:item",
+          "name": "minecraft:emerald"
+        },
+        {
+          "weight": 10,
+          "type": "minecraft:item",
+          "name": "aquamirae:abyssal_amethyst"
+        },
+        {
+          "weight": 10,
+          "type": "minecraft:item",
+          "name": "aquamirae:void_squid"
+        },
+        {
+          "weight": 10,
+          "type": "minecraft:item",
+          "name": "aquamirae:cracked_record"
+        },
+        {
+          "weight": 10,
+          "type": "minecraft:item",
+          "name": "aquamirae:esca_skewer"
+        },
+        {
+          "weight": 10,
+          "type": "minecraft:item",
+          "name": "aquamirae:sea_casserole"
+        },
+        {
+          "weight": 10,
+          "type": "minecraft:item",
+          "name": "aquamirae:terrible_upgrade_smithing_template"
+        }
+      ]
+    }
+  ]
+}

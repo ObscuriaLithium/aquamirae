@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "luminescent_lamp",
+  "category": "misc",
+  "pattern": [
+    "101",
+    " 2 ",
+    " 2 "
+  ],
+  "key": {
+    "0": { "item": "aquamirae:esca" },
+    "1": { "item": "aquamirae:oxyhelium" },
+    "2": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "aquamirae:luminescent_lamp",
+    "count": 1
+  }
+}

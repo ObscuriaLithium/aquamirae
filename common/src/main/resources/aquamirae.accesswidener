@@ -1,0 +1,14 @@
+accessWidener v2 named
+
+accessible class net/minecraft/client/renderer/FogRenderer$FogData
+
+accessible field net/minecraft/world/item/Item components Lnet/minecraft/core/component/DataComponentMap;
+mutable field net/minecraft/world/item/Item components Lnet/minecraft/core/component/DataComponentMap;
+accessible field net/minecraft/world/item/ArmorItem defaultModifiers Ljava/util/function/Supplier;
+mutable field net/minecraft/world/item/ArmorItem defaultModifiers Ljava/util/function/Supplier;
+accessible field net/minecraft/client/gui/components/BossHealthOverlay events Ljava/util/Map;
+
+accessible method net/minecraft/world/damagesource/DamageSources source (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/world/damagesource/DamageSource;
+accessible method net/minecraft/world/inventory/MenuType <init> (Lnet/minecraft/world/inventory/MenuType$MenuSupplier;Lnet/minecraft/world/flag/FeatureFlagSet;)V
+accessible method net/minecraft/world/effect/MobEffect <init> (Lnet/minecraft/world/effect/MobEffectCategory;I)V
+accessible method net/minecraft/core/particles/SimpleParticleType <init> (Z)V

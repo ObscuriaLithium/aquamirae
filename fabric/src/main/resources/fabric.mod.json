@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contributors": [
+    "Pluvia <3",
+    "The Exiled Fellow"
+  ],
+  "contact": {
+    "homepage": "${curseforge}",
+    "sources": "${sources}",
+    "issues": "${issues}"
+  },
+  "license": "${license}",
+  "icon": "${mod_id}.png",
+  "environment": "*",
+  "accessWidener": "${mod_id}.accesswidener",
+  "entrypoints": {
+    "main": [
+      "dev.obscuria.aquamirae.fabric.FabricAquamirae"
+    ],
+    "client": [
+      "dev.obscuria.aquamirae.fabric.client.FabricAquamiraeClient"
+    ],
+    "modmenu": [
+      "dev.obscuria.aquamirae.fabric.compat.ModMenuCompat"
+    ]
+  },
+  "mixins": [
+    "${mod_id}.mixins.json",
+    "${mod_id}.fabric.mixins.json"
+  ],
+  "depends": {
+    "java": ">=21",
+    "minecraft": ">=${minecraft_version}",
+    "fragmentum": ">=${fragmentum_version}",
+    "geckolib": ">=4.8.0",
+    "fabricloader": ">=0.14",
+    "fabric": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "${discord}"
+      }
+    }
+  }
+}
+  

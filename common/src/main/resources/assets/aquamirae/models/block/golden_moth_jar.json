@@ -1,0 +1,9 @@
+{
+  "parent": "aquamirae:block/template/entity_jar",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "all": "aquamirae:block/golden_moth_jar",
+    "particle": "aquamirae:block/golden_moth_jar",
+    "texture": "aquamirae:block/golden_moth_jar"
+  }
+}

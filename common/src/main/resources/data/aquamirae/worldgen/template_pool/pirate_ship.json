@@ -1,0 +1,15 @@
+{
+  "name": "aquamirae:pirate_ship",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "aquamirae:pirate_ship",
+        "processors": "aquamirae:pirate_ship",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

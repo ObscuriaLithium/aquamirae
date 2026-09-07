@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "322",
+    "212",
+    "023"
+  ],
+  "key": {
+    "0": { "item": "minecraft:stick" },
+    "1": { "item": "aquamirae:maelstrom_vestige" },
+    "2": { "item": "aquamirae:abyssal_amethyst" },
+    "3": { "item": "aquamirae:ship_graveyard_echo" }
+  },
+  "result": {
+    "id": "aquamirae:dreadwake",
+    "count": 1
+  }
+}

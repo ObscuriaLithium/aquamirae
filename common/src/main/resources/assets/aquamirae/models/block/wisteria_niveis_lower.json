@@ -1,0 +1,9 @@
+{
+  "parent": "aquamirae:block/abstract_wide_plant",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "all": "aquamirae:block/wisteria_niveis_lower",
+    "particle": "aquamirae:block/wisteria_niveis_lower",
+    "texture": "aquamirae:block/wisteria_niveis_lower"
+  }
+}

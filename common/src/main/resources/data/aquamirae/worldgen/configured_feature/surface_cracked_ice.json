@@ -1,0 +1,21 @@
+{
+  "type": "aquamirae:cracked_ice",
+  "config": {
+    "biome_mask": "aquamirae:ice_maze",
+    "inner_mask": {
+      "noise": "aquamirae:ice_walls",
+      "min": -1.0,
+      "max": 0.22
+    },
+    "outer_mask": {
+      "noise": "aquamirae:ice_walls",
+      "min": 0.4,
+      "max": 1.0
+    },
+    "carver_mask": {
+      "noise": "aquamirae:ice_carver",
+      "min": -1.0,
+      "max": 0.075
+    }
+  }
+}

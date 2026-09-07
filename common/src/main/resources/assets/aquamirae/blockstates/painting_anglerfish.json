@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "aquamirae:block/painting_anglerfish"
+    },
+    "facing=east": {
+      "model": "aquamirae:block/painting_anglerfish",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "aquamirae:block/painting_anglerfish",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "aquamirae:block/painting_anglerfish",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.obscuria.aquamirae.integration.mixin",
+  "refmap": "${mod_id}.refmap.json",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinBiome",
+    "MixinEntity",
+    "MixinItemEntity",
+    "MixinItemStack",
+    "MixinJukeboxSongPlayer",
+    "MixinLecternBlock",
+    "MixinLevel",
+    "MixinLivingEntity",
+    "MixinMinecraftServer",
+    "MixinPlayer",
+    "MixinStructureTemplate",
+    "MixinTagLoader",
+    "server.MixinServerLevel",
+    "server.MixinServerLevelEntityCallbacks",
+    "server.MixinServerPlayer"
+  ],
+  "client": [
+    "client.MixinClientLevel",
+    "client.MixinEntityRenderDispatcher",
+    "client.MixinFogRenderer",
+    "client.MixinGameRenderer",
+    "client.MixinItemRenderer",
+    "client.MixinLevelRenderer",
+    "client.MixinLogoRenderer",
+    "client.MixinMinecraft",
+    "client.MixinPillagerRenderer",
+    "client.MixinScreen",
+    "client.MixinTitleScreen",
+    "client.MixinVindicatorRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
+

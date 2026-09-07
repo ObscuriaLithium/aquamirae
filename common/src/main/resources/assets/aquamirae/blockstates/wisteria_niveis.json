@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "aquamirae:block/wisteria_niveis_lower"
+    },
+    "half=upper": {
+      "model": "aquamirae:block/wisteria_niveis_upper"
+    }
+  }
+}

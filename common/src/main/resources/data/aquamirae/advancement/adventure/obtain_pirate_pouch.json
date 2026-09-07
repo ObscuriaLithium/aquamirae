@@ -1,0 +1,35 @@
+{
+  "parent": "aquamirae:adventure/find_ice_maze",
+  "display": {
+    "icon": {
+      "id": "aquamirae:pirate_pouch"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_pirate_pouch.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_pirate_pouch.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aquamirae:pirate_pouch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:pirate_pouch"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  }
+}

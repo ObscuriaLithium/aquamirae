@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "101",
+    "1 1",
+    "   "
+  ],
+  "key": {
+    "0": { "item": "minecraft:totem_of_undying" },
+    "1": { "item": "aquamirae:abyssal_amethyst" }
+  },
+  "result": {
+    "id": "aquamirae:abyssal_tiara",
+    "count": 1
+  }
+}

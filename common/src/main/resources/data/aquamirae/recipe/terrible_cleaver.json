@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " 31",
+    "213",
+    "02 "
+  ],
+  "key": {
+    "0": { "item": "minecraft:stick" },
+    "1": { "item": "minecraft:iron_ingot" },
+    "2": { "item": "aquamirae:fin" },
+    "3": { "item": "aquamirae:ship_graveyard_echo" }
+  },
+  "result": {
+    "id": "aquamirae:terrible_cleaver",
+    "count": 1
+  }
+}

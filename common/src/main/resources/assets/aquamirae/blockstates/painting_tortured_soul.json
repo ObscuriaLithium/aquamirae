@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "aquamirae:block/painting_tortured_soul"
+    },
+    "facing=east": {
+      "model": "aquamirae:block/painting_tortured_soul",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "aquamirae:block/painting_tortured_soul",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "aquamirae:block/painting_tortured_soul",
+      "y": 270
+    }
+  }
+}

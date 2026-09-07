@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.obscuria.aquamirae.fabric.mixin",
+  "refmap": "${mod_id}.refmap.json",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinLivingEntity"
+  ],
+  "client": [
+    "client.MixinBossHealthOverlay"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+  }
+  

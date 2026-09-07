@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "type": "aquamirae:configurable_random_spread",
+    "salt": 346836,
+    "config": {
+      "spacing": "@PIRATE_OUTPOST_PLACEMENT_SPACING",
+      "separation": "@PIRATE_OUTPOST_PLACEMENT_SEPARATION"
+    }
+  },
+  "structures": [
+    {
+      "structure": "aquamirae:pirate_outpost",
+      "weight": 1
+    }
+  ]
+}

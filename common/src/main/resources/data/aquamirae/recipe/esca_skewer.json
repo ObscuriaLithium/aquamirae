@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 22",
+    "312",
+    "03 "
+  ],
+  "key": {
+    "0": { "item": "minecraft:stick" },
+    "1": { "item": "aquamirae:wisteria_niveis" },
+    "2": { "item": "aquamirae:esca" },
+    "3": { "item": "aquamirae:oxyhelium" }
+  },
+  "result": {
+    "id": "aquamirae:esca_skewer",
+    "count": 1
+  }
+}

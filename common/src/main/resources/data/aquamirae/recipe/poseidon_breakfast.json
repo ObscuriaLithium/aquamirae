@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "212",
+    "343",
+    " 0 "
+  ],
+  "key": {
+    "0": { "item": "minecraft:bowl" },
+    "1": { "item": "aquamirae:cooked_spinefish" },
+    "2": { "item": "aquamirae:esca" },
+    "3": { "item": "aquamirae:jellyfish_jelly" },
+    "4": { "item": "aquamirae:void_squid" }
+  },
+  "result": {
+    "id": "aquamirae:poseidon_breakfast",
+    "count": 1
+  }
+}

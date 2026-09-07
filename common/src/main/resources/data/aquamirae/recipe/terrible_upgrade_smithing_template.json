@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "212",
+    "101",
+    "212"
+  ],
+  "key": {
+    "0": { "item": "aquamirae:terrible_upgrade_smithing_template" },
+    "1": { "item": "aquamirae:angler_fang" },
+    "2": { "item": "aquamirae:fin" }
+  },
+  "result": {
+    "id": "aquamirae:terrible_upgrade_smithing_template",
+    "count": 2
+  }
+}

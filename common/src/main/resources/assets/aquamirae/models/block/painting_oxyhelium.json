@@ -1,0 +1,8 @@
+{
+  "parent": "aquamirae:block/template/collectible_painting",
+  "textures": {
+    "all": "aquamirae:block/painting_oxyhelium",
+    "particle": "aquamirae:block/painting_oxyhelium",
+    "texture": "aquamirae:block/painting_oxyhelium"
+  }
+}

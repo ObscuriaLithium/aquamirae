@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "luminescent_bubble",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    "101",
+    " 1 "
+  ],
+  "key": {
+    "0": { "item": "aquamirae:esca" },
+    "1": { "item": "aquamirae:oxyhelium" }
+  },
+  "result": {
+    "id": "aquamirae:luminescent_bubble",
+    "count": 12
+  }
+}

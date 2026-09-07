@@ -1,0 +1,26 @@
+{
+  "parent": "aquamirae:adventure/find_ice_maze",
+  "display": {
+    "icon": {
+      "id": "aquamirae:fin"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.encounter_the_shipbreaker.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.encounter_the_shipbreaker.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "encounter_the_shipbreaker": {
+      "trigger": "aquamirae:shipbreaker_encounter"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  }
+}

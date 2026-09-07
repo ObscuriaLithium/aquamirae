@@ -1,0 +1,100 @@
+{
+  "parent": "aquamirae:adventure/obtain_terrible_upgrade_smithing_template",
+  "display": {
+    "icon": {
+      "id": "aquamirae:terrible_fang"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_all_terrible_weapons.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_all_terrible_weapons.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aquamirae:remnant_saber": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:remnant_saber"
+            ]
+          }
+        ]
+      }
+    },
+    "aquamirae:terrible_cleaver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:terrible_cleaver"
+            ]
+          }
+        ]
+      }
+    },
+    "aquamirae:terrible_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:terrible_blade"
+            ]
+          }
+        ]
+      }
+    },
+    "aquamirae:terrible_fang": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:terrible_fang"
+            ]
+          }
+        ]
+      }
+    },
+    "aquamirae:terrible_chakram": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:terrible_chakram"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "aquamirae:remnant_saber"
+    ],
+    [
+      "aquamirae:terrible_cleaver"
+    ],
+    [
+      "aquamirae:terrible_blade"
+    ],
+    [
+      "aquamirae:terrible_fang"
+    ],
+    [
+      "aquamirae:terrible_chakram"
+    ]
+  ],
+  "rewards": {
+    "experience": 40
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "aquamirae:oxyhelium",
+  "config": {
+    "growable_on": "aquamirae:oxyhelium_growable_on",
+    "max_depth": 16,
+    "max_length": 8,
+    "spread_radius": 6,
+    "length_penalty_per_block": 1,
+    "count": {
+      "type": "uniform",
+      "min_inclusive": 4,
+      "max_inclusive": 16
+    }
+  }
+}

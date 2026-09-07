@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "cross": "aquamirae:block/oxyhelium_bud",
+    "particle": "aquamirae:block/oxyhelium_bud"
+  }
+}

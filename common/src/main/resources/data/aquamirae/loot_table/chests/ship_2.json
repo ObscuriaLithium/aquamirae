@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "weight": 2,
+          "type": "minecraft:item",
+          "name": "aquamirae:music_disc_horizon"
+        },
+        {
+          "weight": 3,
+          "type": "minecraft:item",
+          "name": "aquamirae:dagger_of_greed"
+        },
+        {
+          "weight": 5,
+          "type": "minecraft:item",
+          "name": "aquamirae:sea_stew"
+        },
+        {
+          "weight": 10,
+          "type": "minecraft:item",
+          "name": "minecraft:diamond"
+        },
+        {
+          "weight": 30,
+          "type": "minecraft:item",
+          "name": "minecraft:emerald"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 3,
+        "max": 9
+      },
+      "entries": [
+        {
+          "weight": 5,
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot"
+        },
+        {
+          "weight": 4,
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "weight": 3,
+          "type": "minecraft:item",
+          "name": "minecraft:emerald"
+        },
+        {
+          "weight": 1,
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget"
+        },
+        {
+          "weight": 1,
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget"
+        },
+        {
+          "weight": 1,
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell"
+        }
+      ]
+    }
+  ]
+}

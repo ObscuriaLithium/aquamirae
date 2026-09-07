@@ -1,0 +1,35 @@
+{
+  "parent": "aquamirae:adventure/obtain_frozen_key",
+  "display": {
+    "icon": {
+      "id": "aquamirae:tidepiercer"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_tidepiercer.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_tidepiercer.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aquamirae:tidepiercer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:tidepiercer"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 200
+  }
+}

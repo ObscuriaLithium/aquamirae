@@ -1,0 +1,8 @@
+{
+  "comparator_output": 7,
+  "length_in_seconds": 150.0,
+  "sound_event": "aquamirae:record.forsaken_drownage",
+  "description": {
+    "translate": "jukebox_song.aquamirae.forsaken_drownage"
+  }
+}

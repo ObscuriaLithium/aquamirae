@@ -1,0 +1,35 @@
+{
+  "parent": "aquamirae:adventure/find_ice_maze",
+  "display": {
+    "icon": {
+      "id": "aquamirae:shell_horn"
+    },
+    "title": {
+      "translate": "advancements.aquamirae.obtain_shell_horn.title"
+    },
+    "description": {
+      "translate": "advancements.aquamirae.obtain_shell_horn.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aquamirae:shell_horn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aquamirae:shell_horn"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  }
+}

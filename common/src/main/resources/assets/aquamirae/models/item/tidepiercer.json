@@ -1,0 +1,6 @@
+{
+  "parent": "aquamirae:item/handheld_2x",
+  "textures": {
+    "layer0": "aquamirae:item/tidepiercer"
+  }
+}

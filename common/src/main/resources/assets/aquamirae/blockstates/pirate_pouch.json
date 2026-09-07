@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "aquamirae:block/pirate_pouch"
+    },
+    "facing=east": {
+      "model": "aquamirae:block/pirate_pouch",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "aquamirae:block/pirate_pouch",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "aquamirae:block/pirate_pouch",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=stem": {
+      "model": "aquamirae:block/oxyhelium_stem"
+    },
+    "type=bud": {
+      "model": "aquamirae:block/oxyhelium_bud"
+    },
+    "type=empty_bud": {
+      "model": "aquamirae:block/oxyhelium_bud_empty"
+    },
+    "type=rare_bud": {
+      "model": "aquamirae:block/oxyhelium_bud_rare"
+    }
+  }
+}

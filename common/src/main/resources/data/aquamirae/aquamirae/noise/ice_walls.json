@@ -1,0 +1,9 @@
+{
+  "noise_type": "Perlin",
+  "frequency": 0.02,
+  "fractal_type": "Ridged",
+  "fractal_octaves": 2,
+  "fractal_lacunarity": 2.0,
+  "fractal_gain": 4.0,
+  "fractal_weighted_strength": 5.0
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "323",
+    "111",
+    " 0 "
+  ],
+  "key": {
+    "0": { "item": "minecraft:bowl" },
+    "1": { "item": "aquamirae:cooked_spinefish" },
+    "2": { "item": "aquamirae:fin" },
+    "3": { "item": "aquamirae:oxyhelium" }
+  },
+  "result": {
+    "id": "aquamirae:sea_stew",
+    "count": 1
+  }
+}
