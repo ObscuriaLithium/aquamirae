@@ -5,14 +5,15 @@ import dev.obscuria.aquamirae.api.common.ability.AbilityHelper;
 import dev.obscuria.aquamirae.api.common.ability.capability.IDamageHandler;
 import dev.obscuria.aquamirae.api.common.ability.capability.IDeathHandler;
 import dev.obscuria.aquamirae.api.common.ability.capability.IEffectHandler;
+import dev.obscuria.aquamirae.api.server.ServerLevelHelper;
 import dev.obscuria.aquamirae.common.AquamiraeCombatRules;
 import dev.obscuria.aquamirae.common.ability.weapon.RemnantSaberAbility;
 import dev.obscuria.aquamirae.integration.DamageContext;
 import dev.obscuria.aquamirae.registry.AquamiraeAttributes;
 import dev.obscuria.aquamirae.registry.AquamiraeEffects;
-import dev.obscuria.aquamirae.registry.references.AquamiraeDamageTypes;
+import dev.obscuria.aquamirae.server.event.CrystallizationEvent;
 import net.minecraft.core.Holder;
-import net.minecraft.core.registries.Registries;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
@@ -46,9 +47,8 @@ public final class HookLivingEntity {
         AbilityHelper.forEachCapability(IEffectHandler.class, entity,
                 handler -> handler.onEffectRemoved(entity, instance));
         if (!instance.getEffect().equals(AquamiraeEffects.CRYSTALLIZATION.holder())) return;
-        var registry = entity.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE);
-        var type = registry.getHolderOrThrow(AquamiraeDamageTypes.CRYSTALLIZATION);
-        entity.hurt(new DamageSource(type), 999999f);
+        if (!(entity.level() instanceof ServerLevel serverLevel)) return;
+        ServerLevelHelper.triggerEvent(serverLevel, new CrystallizationEvent(entity));
     }
 
     public static float modifyIncomingDamage(LivingEntity self, DamageSource source, float damage) {
