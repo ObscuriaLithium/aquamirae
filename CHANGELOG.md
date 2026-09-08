@@ -1,3 +1,2 @@
-* Added some missing crafting and cooking recipes
-* Added recipe-unlocking advancements for the new recipes
-* Implemented asynchronous keepsake loading
+* Fixed many sounds not working properly in the latest patch due to a build issue
+* Fixed a crash when holding a Totem of Undying as the Crystallization effect expired
